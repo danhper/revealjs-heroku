@@ -136,7 +136,7 @@ module.exports = (grunt) ->
         'server'
     ]
 
-    grunt.registerTask 'heroku:production',
+    grunt.registerTask 'heroku',
         'Task for heroku', [
             'dist'
     ]
