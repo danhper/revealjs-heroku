@@ -31,7 +31,7 @@ module.exports = (grunt) ->
             jshint:
                 files: ['js/*.js']
                 tasks: ['jshint']
-        
+
             sass:
                 files: ['css/source/theme.scss']
                 tasks: ['sass']
@@ -41,7 +41,7 @@ module.exports = (grunt) ->
             theme:
                 files:
                     'css/theme.css': 'css/source/theme.scss'
-        
+
         connect:
 
             livereload:
@@ -134,4 +134,9 @@ module.exports = (grunt) ->
     grunt.registerTask 'default', [
         'test'
         'server'
+    ]
+
+    grunt.registerTask 'heroku:production',
+        'Task for heroku', [
+            'dist'
     ]
