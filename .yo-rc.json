@@ -1,0 +1,7 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Reveal on Heroku",
+    "packageVersion": "0.1.0",
+    "useSass": true
+  }
+}
