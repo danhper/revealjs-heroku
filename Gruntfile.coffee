@@ -130,12 +130,13 @@ module.exports = (grunt) ->
             'copy'
         ]
 
-    grunt.registerTask 'heroku:production', 'dist'
-
-
     # Define default task.
     grunt.registerTask 'default', [
         'test'
         'server'
     ]
 
+    grunt.registerTask 'heroku:production',
+        'Task for heroku', [
+            'dist'
+        ]
